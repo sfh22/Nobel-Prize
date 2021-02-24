@@ -5,6 +5,7 @@ from PIL import Image
 import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
+import urllib
 
 @st.cache(allow_output_mutation=True)
 def read_file(file):
@@ -28,9 +29,10 @@ if purpose == 'Nobel Prize: Overview':
     st.title('A Visual History of Nobel Prize Winners')
     st.text('')
 
-    image = Image.open("images/Nobel_Prize.png")
-    st.image(image)
-    st.text('')
+    url = 'https://drive.google.com/file/d/1nKVblZTq6oGKxL3Bb08U6ND_-8VgLYBU/view?usp=sharing'
+    image1 = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+
+    st.image(image1)
 
     st.header("**What is the Nobel Prize**")
     st.write('The Nobel prize is one of the most famous and prestigious intellectual awards.\
@@ -44,9 +46,10 @@ if purpose == 'Nobel Prize: Overview':
               given to victors of competitions (image below).')
     st.text('')
 
-    image1 = Image.open("images/wreath.png")
-    st.image(image1, width=350)
-    st.text('')
+    url = 'https://drive.google.com/file/d/1xW9PypOnb3AXr4VheD9fhxFA3oxiOI1C/view?usp=sharing'
+    image2 = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+
+    st.image(image2)
 
     st.header('**Alfred Nobel: The Founder of the Nobel Prize**')
     st.write("Alfred Nobel (1833-1896) was born in Stockholm, Sweden, on 21 October 1833. His family was descended \
@@ -75,8 +78,10 @@ elif purpose == 'Nobel Prize: Quick Facts':
     st.title('Nobel Prize Quick Facts')
     st.text('')
 
-    image2 = Image.open("images/nob.png")
-    st.image(image2)
+    url = 'https://drive.google.com/file/d/1qGzYYDpw8t0wNeBCpSpl2Bl9usDKzRnD/view?usp=sharing'
+    image3 = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+
+    st.image(image3)
 
     st.text('')
 
@@ -88,8 +93,10 @@ elif purpose == 'Nobel Prize: Quick Facts':
     st.header('603 Nobel Prizes')
     st.write('Between 1901 and 2020, the Nobel Prizes and the Prize in Economic Sciences were awarded 603 times.')
 
-    image3 = Image.open("images/num_prizes.png")
-    st.image(image3)
+    url = 'https://drive.google.com/file/d/1DrvVX4FcM8Vroi7Iq0P3kogO7yNNW2vk/view?usp=sharing'
+    image4 = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+
+    st.image(image4)
 
     st.write('In the statutes of the Nobel Foundation it says: “A prize amount may be equally divided between two works, each \
             of which is considered to merit a prize. If a work that is being rewarded has been produced by two or three persons, \
