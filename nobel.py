@@ -44,8 +44,8 @@ if purpose == 'Nobel Prize: Overview':
               given to victors of competitions (image below).')
     st.text('')
 
-    image = Image.open("wreath.png")
-    st.image(image, width=350)
+    image1 = Image.open("wreath.png")
+    st.image(image1, width=350)
     st.text('')
 
     st.header('**Alfred Nobel: The Founder of the Nobel Prize**')
@@ -75,8 +75,8 @@ elif purpose == 'Nobel Prize: Quick Facts':
     st.title('Nobel Prize Quick Facts')
     st.text('')
 
-    image = Image.open("nob.png")
-    st.image(image)
+    image2 = Image.open("nob.png")
+    st.image(image2)
 
     st.text('')
 
@@ -88,8 +88,8 @@ elif purpose == 'Nobel Prize: Quick Facts':
     st.header('603 Nobel Prizes')
     st.write('Between 1901 and 2020, the Nobel Prizes and the Prize in Economic Sciences were awarded 603 times.')
 
-    image = Image.open("num_prizes.png")
-    st.image(image)
+    image3 = Image.open("num_prizes.png")
+    st.image(image3)
 
     st.write('In the statutes of the Nobel Foundation it says: “A prize amount may be equally divided between two works, each \
             of which is considered to merit a prize. If a work that is being rewarded has been produced by two or three persons, \
