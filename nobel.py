@@ -28,7 +28,7 @@ if purpose == 'Nobel Prize: Overview':
     st.title('A Visual History of Nobel Prize Winners')
     st.text('')
 
-    image = Image.open(r"C:\Users\samer\Dropbox\fotos\Nobel_Prize.png")
+    image = Image.open("Nobel_Prize.png")
     st.image(image)
     st.text('')
 
@@ -44,7 +44,7 @@ if purpose == 'Nobel Prize: Overview':
               given to victors of competitions (image below).')
     st.text('')
 
-    image1 = Image.open(r"C:\Users\samer\Dropbox\fotos\wreath.PNG")
+    image1 = Image.open("wreath.png")
     st.image(image1, width=350)
     st.text('')
 
@@ -75,7 +75,7 @@ elif purpose == 'Nobel Prize: Quick Facts':
     st.title('Nobel Prize Quick Facts')
     st.text('')
 
-    image2 = Image.open(r"C:\Users\samer\Dropbox\fotos\nob.PNG")
+    image2 = Image.open("nob.png")
     st.image(image2)
 
     st.text('')
@@ -88,7 +88,7 @@ elif purpose == 'Nobel Prize: Quick Facts':
     st.header('603 Nobel Prizes')
     st.write('Between 1901 and 2020, the Nobel Prizes and the Prize in Economic Sciences were awarded 603 times.')
 
-    image3 = Image.open(r"C:\Users\samer\Dropbox\fotos\num_prizes.PNG")
+    image3 = Image.open("num_prizes.png")
     st.image(image3)
 
     st.write('In the statutes of the Nobel Foundation it says: “A prize amount may be equally divided between two works, each \
